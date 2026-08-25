@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "344703129947",
+    "project_id": "easy-bike-1",
+    "storage_bucket": "easy-bike-1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344703129947:android:d6aa5bf8848c9452a3227e",
+        "android_client_info": {
+          "package_name": "com.example.easy_bike"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt5njMdY2A0yZlae_2Sgr_pWaDqzNQabs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

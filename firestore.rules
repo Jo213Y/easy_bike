@@ -1,0 +1,18 @@
+rules_version = '2';
+
+// ملاحظة: التطبيق ده مفيهوش تسجيل دخول (Authentication) لحد دلوقتي،
+// فالقواعد دي بتسمح لأي حد عنده رابط المشروع يقرأ ويكتب البيانات.
+// ده مناسب طول ما التطبيق بيتستخدم من جهازين/تلاتة تبع المدرب بس.
+// لو حبيت تأمنه أكتر بعدين، ضيف Firebase Authentication وابدل الشرط بـ:
+// allow read, write: if request.auth != null;
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /clients/{clientId} {
+      allow read, write: if true;
+    }
+    match /sessions/{sessionId} {
+      allow read, write: if true;
+    }
+  }
+}
